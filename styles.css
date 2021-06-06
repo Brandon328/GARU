@@ -1,0 +1,374 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --skin: #fae6df;
+  --red: #c30411;
+  --black: #040404;
+  --white: #ffff;
+
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.head{
+  width: 365px;
+  height: 288px;
+  background-color: var(--black);
+  border-radius: 50% 50% 45% 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* BRAIDS */
+
+.braid-container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+  width: 350px;
+  height: 150px;
+  transform: rotateX(20deg);
+}
+
+.left-braid, .right-braid{
+  width: 45px;
+  height: 45px;
+  background-color: var(--black);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.left-braid{
+  transform: rotate(-35deg);
+}
+
+.right-braid{
+  transform: rotate(37deg);
+}
+
+/* SCRUNCHIES */
+
+.scrunchie{
+  background-color: var(--red);
+  width: 30px;
+  height: 14px;
+  
+}
+
+/* HAIR */
+
+/* LEFT HAIR */
+.l-hair{
+  width: 60px;
+  height: 30px;
+  background-color: var(--black);
+  transform: skewX(50deg);
+}
+
+.lb-one{
+  position: absolute;
+  top: 74px;
+  left: -12px;
+  transform: rotate(91deg);
+}
+
+.lb-two{
+  position: absolute;
+  top: 69px;
+  left: -26px;
+  transform: rotate(46deg);
+}
+
+.lb-three{
+  position: absolute;
+  top: 83px;
+  left: -43px;
+  transform: rotate(10deg);
+}
+
+.lb-four{
+  position: absolute;
+  top: 100px;
+  left: -45px;
+  transform: rotate(2deg);
+}
+
+.lb-four .l-hair{
+  transform: skewX(-50deg);
+}
+
+/* RIGHT HAIR */
+.r-hair{
+  width: 60px;
+  height: 30px;
+  background-color: var(--black);
+  transform: skewX(-50deg);
+}
+
+.rb-one{
+  position: absolute;
+  top: 77px;
+  right: -11px;
+  transform: rotate(-92deg);
+}
+
+.rb-two{
+  position: absolute;
+  top: 76px;
+  right: -30px;
+  transform: rotate(129deg);
+}
+
+.rb-three{
+  position: absolute;
+  top: 88px;
+  right: -46px;
+  transform: rotate(-22deg);
+}
+
+.rb-four{
+  position: absolute;
+  top: 104px;
+  right: -44px;
+}
+
+.rb-four .r-hair{
+  transform: skewX(50deg);
+}
+/* FACE */
+
+.face{
+  width: 300px;
+  height: 221px;
+  background-color: var(--skin);
+  border-radius: 50% 50% 45% 45%;
+  position: absolute;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* EYES */
+
+.eye-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 300px;
+  height: 154px;
+}
+
+.left-eye, .right-eye{
+  width: 70px;
+  height: 73px;
+  border-radius: 50%;
+  border: 10px solid var(--black);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pupil{
+  width: 25px;
+  height: 25px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.brightness{
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+/* EYEBROWS */
+
+.eyebrow-container{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 300px;
+  height: 79px;
+}
+
+.left-eyebrow, .right-eyebrow{
+  width: 100px;
+  height: 25px;
+  background-color: var(--black);
+  border-radius: 50px;
+}
+
+.left-eyebrow{
+  transform: rotate(20deg);
+}
+
+.right-eyebrow{
+  transform: rotate(-20deg);
+}
+
+.mouth{
+  position: relative;
+  top: 20px;
+  width: 70px;
+  height: 15px;
+  background-color: var(--black);
+  border-radius: 50px;
+}
+
+/* BODY */
+
+.body{
+  background-color: var(--black);
+  width: 200px;
+  height: 130px;
+  position: relative;
+  top: -15px;
+  border-radius: 0 0 50% 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEART */
+
+.heart-container{
+  position: relative;
+  top: 25px;
+  width: 80px;
+  height: 50%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.heart-container .one-heart,
+.heart-container .two-heart {
+  width: 40px;
+  height: 40px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
+.heart-container .one-heart{
+  position: relative;
+  left: 5px;
+}
+
+.heart-container .two-heart{
+  position: relative;
+  right: 5px;
+}
+
+.heart-container .three-heart{
+  width: 40px;
+  height: 40px;
+  background-color: var(--red);
+  margin: 0 auto;
+  transform: rotate(45deg);
+  position: relative;
+  top: -24.5px;
+  border-radius: 16px 0 10px 0;
+}
+
+/* ARMS */
+
+.arm-container{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-16%);
+  width: 289px;
+  height: 130px;
+}
+
+.left-arm, .right-arm{
+  width: 60px;
+  height: 130px;
+  background-color: var(--black);
+}
+
+.left-arm{
+  transform: rotate(35deg);
+}
+
+.right-arm{
+  transform: rotate(-35deg);
+}
+
+/* HANDS */
+
+.hand-container{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform: translate(-22.5%);
+  width: 360px;
+  height: 137px;
+}
+
+.left-hand, .right-hand{
+  width: 68px;
+  height: 68px;
+  background-color: var(--red);
+  border-radius: 50%;
+  border: 14px solid var(--black);
+}
+
+/* LEGS */
+
+.legs-container{
+  position: relative;
+  top: -38px;
+  width: 148px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-leg, .left-leg{
+  width: 68px;
+  height: 110px;
+  background-color: var(--black);
+  border-radius: 0 0 100px 100px;
+}
+
+
+/* SHADOW */
+
+.shadow{
+  border-radius: 50%;
+  width: 230px;
+  height: 50px;
+  background-color: #AEB0B4;
+  filter: blur(10px);
+  position: relative;
+  top: -67px;
+  z-index: -5;
+}
