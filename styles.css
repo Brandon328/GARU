@@ -17,7 +17,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
 }
 
@@ -127,8 +126,8 @@ body{
 
 .rb-one{
   position: absolute;
-  top: 77px;
-  right: -11px;
+  top: 68px;
+  right: -18px;
   transform: rotate(-92deg);
 }
 
@@ -148,8 +147,8 @@ body{
 
 .rb-four{
   position: absolute;
-  top: 104px;
-  right: -44px;
+  top: 95px;
+  right: -50px;
 }
 
 .rb-four .r-hair{
